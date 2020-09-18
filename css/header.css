@@ -1,0 +1,10 @@
+.header {
+    background-image: url('../images/background.jpg');
+    background-position: 0px 400px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: #9c9c9c 2px 2px;
+    border-bottom: 5px solid green;
+}
