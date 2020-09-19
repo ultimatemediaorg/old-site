@@ -7,6 +7,39 @@ body {
     background-color: #292929;
 }
 
-.content h1,h2,h3,h4,h5,h6,p {
+body a {
+    color: #00c800;
+}
+
+body a:hover {
+    opacity: 0.8;
+}
+
+body button {
+    background-color: #00c800;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+}
+
+body button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.content {
     margin: 10px;
+}
+
+th {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    height: 150px;
+    width: 100%;
 }
