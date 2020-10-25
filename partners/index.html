@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Program</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/betterbr.css">
+    <style>
+        input[type=text],input[type=email],input[type=url],select {
+            width: 50%;
+        }
+    </style>
+    <script>
+        function id(e) {
+            e.value = 'xxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        window.onload = function(){
+            var element = document.getElementsByName("id")[0];
+
+            id(element);
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to the Ultimate Media Partner Program!</h1>
+        <button style="padding: 10px 100px 10px 100px; font-size: large;" onclick="location.hash = '#join'">Join Now!</button>
+    </div>
+
+    <div class="content">
+        <center>
+            <h2>Featured</h2>
+
+            <h3>YouTube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLt3m1fjKwruw2NQk7OmCQglVUt19HSM0A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>Twitch</h3>
+            <iframe src="https://player.twitch.tv/?channel=C1200onTwitch&parent=ultimatemediaorg.github.io&muted=true" height="315" width="560" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+
+            <h3>Discord</h3>
+            <a href="https://discord.gg/RtgVMaf" target="_blank">Ultimate Media Community</a>
+
+            <h2>Perks</h2>
+            <img src="../images/partnerperk.png" alt="Partner Perks" style="width: 90%;">
+
+            <h2 id="join">Want to Join?</h2>
+            <p>Want in? Just fill in the form below!</p>
+            <p><i>Make sure you have at least 50 YouTube Subscribers, 50 Streaming Followers or 50 Discord Members.</i></p>
+
+            <form action="https://formsubmit.co/partners.atultimate@europe.com" method="post" style="border: 1px solid white; width: 50%; text-align: left; padding: 10px;">
+                <input type="hidden" name="_next" value="https://ultimatemediaorg.github.io/partners/thanks.html">
+
+                <p>Discord Username: <br><input type="text" name="discord" placeholder="C1200#6590" required></p>
+
+                <p>Email: <br><input type="email" name="email" placeholder="coreyw.ultimatemedia@gmail.com" required></p>
+
+                <p>Partner Type: <br><select name="PartnerType" required>
+                    <option selected disabled>Choose One...</option>
+                    <option>YouTube</option>
+                    <option>Streamer</option>
+                    <option>Discord</option>
+                </select></p>
+
+                <p>Link to YouTube, Streamer or Discord: <br><input type="url" name="url" placeholder="https://discord.gg/RtgVMaf" required></p>
+
+                <p>ID (Please write this down): <br><input type="text" name="id" readonly required></p>
+
+                <input type="submit" value="Send Application">
+            </form>
+        </center>
+    </div>
+</body>
+</html>
