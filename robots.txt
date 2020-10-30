@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: js
+Disallow: images
+Disallow: embeds
+Disallow: css
+
+# ctf{cd205e38ebf5}
